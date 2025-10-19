@@ -19,7 +19,7 @@ class MainCalendar extends StatelessWidget {
       selectedDayPredicate: (date) =>
         date.year == selectedDate.year &&
         date.month == selectedDate.month &&
-        date.day == selectedDate.day,        
+                date.day == selectedDate.day,        
 
       firstDay: DateTime(1800, 1, ),
       lastDay: DateTime(3000, 1, 1),
@@ -42,5 +42,12 @@ class MainCalendar extends StatelessWidget {
         weekendDecoration: BoxDecoration(
           borderRadius: BorderRadius.circular(6.0),
           color: LIGHT_GREY_COLOR,
+        ),
+        selectedDecoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(6.0),
+          border: Border.all(  
+            color: PRIMARY_COLOR,
+            width: 1.0,
+          ),
         ),
         
