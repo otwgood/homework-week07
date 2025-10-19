@@ -50,4 +50,19 @@ class MainCalendar extends StatelessWidget {
             width: 1.0,
           ),
         ),
-        
+        defaultTextStyle: TextStyle(
+          fontWeight: FontWeight.w600,
+          color: DARK_GREY_COLOR,
+        ),
+        weekendTextStyle: TextStyle(
+          fontWeight: FontWeight.w600,
+          color: DARK_GREY_COLOR,
+        ),
+        selectedTextStyle: TextStyle(
+          fontWeight: FontWeight.w600,
+          color: PRIMARY_COLOR,
+        ),
+      ),
+    );
+  }
+}
