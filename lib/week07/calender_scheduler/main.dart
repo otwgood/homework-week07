@@ -11,4 +11,16 @@ void main() async {
 
   await initializeDateFormatting();
 
+    final database = LocalDatabase();
+
+    final database = LocalDatabase();
+
+  GetIt.I.registerSingleton<LocalDatabase> (database);
+  
+  runApp(  
+    MaterialApp(  
+      home: HomeScreen(),
+    ),
+  );
+
 }
